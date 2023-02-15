@@ -1,0 +1,2 @@
+#!/bin/bash
+cat input.txt | (i=1; while read -r line ||
