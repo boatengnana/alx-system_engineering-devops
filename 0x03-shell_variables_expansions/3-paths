@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "$(echo $PATH | \"$(grep /)\n\" | wc -l)\n"
+printf $(find $PATH -mindepth 1 -maxdepth 1 -type d | wc -l)
