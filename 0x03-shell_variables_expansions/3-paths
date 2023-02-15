@@ -1,2 +1,2 @@
 #!/bin/bash
-printf $(grep ^/ $PATH | wc -l)
+printf "$(echo $PATH | grep / | wc -m)\n"
