@@ -1,2 +1,3 @@
 #!/bin/bash
-cat input.txt | (i=1; while read -r line ||
+paste -d '\n' <(cat input) <(echo) | grep -v '^\s*$' | grep -n '.*' | grep -v '^[[:digit:]]*[02468]:'
+
