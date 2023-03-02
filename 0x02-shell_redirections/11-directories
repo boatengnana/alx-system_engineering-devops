@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1 | grep -c /$ | grep vE '^\.{1,2}$'
+find . -type d -not -path '*/\*' -mindepth 1 -maxdepth 1 | wc -l
