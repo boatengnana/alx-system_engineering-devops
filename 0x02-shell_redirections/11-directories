@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1d */ 2>/dev/null |  wc -l
+ls -1 | grep -c /$
