@@ -1,2 +1,2 @@
-#/bin/bash
+#!/bin/bash
 com -23 <(sort $1 | unique -d) <(sort $1 | unique -D) | sort
